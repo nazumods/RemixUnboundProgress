@@ -1,0 +1,10 @@
+## Interface: 110205
+## Category: Shadows of UI
+## Title: Limits Unbound Progress
+## Author: Nazuraki
+## Version: 11-1
+## IconTexture: Interface\Icons\inv_icon_shadowcouncilorb_green
+## Dependencies: LibNAddOn, LibNUI
+## X-NUI-UI: LibNUI
+
+Bar.lua
