@@ -7,6 +7,8 @@ local StatusBar, Texture, Label = ui.StatusBar, ui.Texture, ui.Label
 local TopLeft, TopRight, BottomLeft, BottomRight = ui.edge.TopLeft, ui.edge.TopRight, ui.edge.BottomLeft, ui.edge.BottomRight
 local rgba = ns.Colors.rgba
 
+local MAX_GS = 749
+
 local Bar = Class(StatusBar, function(self)
   -- darken top edge of bar
   self.edge = Texture:new{
@@ -90,9 +92,9 @@ function Bar:update()
 
   self.fill:Width(w * progress)
   self.powerLevel:Text(unbound)
-  self.gs:Width(gs < 740 and gs / 740 * w or 0)
+  self.gs:Width(gs < MAX_GS and gs / MAX_GS * w or 0)
   self.ilvl:Text(gs)
-  self.ilvl:SetShown(gs < 740)
+  self.ilvl:SetShown(gs < MAX_GS)
 end
 
 function Bar:initNotches()
