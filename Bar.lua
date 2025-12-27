@@ -7,7 +7,7 @@ local StatusBar, Texture, Label = ui.StatusBar, ui.Texture, ui.Label
 local TopLeft, TopRight, BottomLeft, BottomRight = ui.edge.TopLeft, ui.edge.TopRight, ui.edge.BottomLeft, ui.edge.BottomRight
 local rgba = ns.Colors.rgba
 
-local MAX_GS = 749
+local MAX_GS = 779
 
 local Bar = Class(StatusBar, function(self)
   -- darken top edge of bar
